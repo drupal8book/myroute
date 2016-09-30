@@ -5,7 +5,7 @@ myroute.hello_world_controller_hello:
     _controller: '\Drupal\myroute\Controller\HelloWorldController::hello'
     _title: 'Hello World'
   requirements:
-    _permission: 'access content'
+    _custom_access: '\Drupal\myroute\Controller\HelloWorldController::custom_access_check'
 
 myroute.greeting_controller_greeting:
   path: 'hello/{name}'
