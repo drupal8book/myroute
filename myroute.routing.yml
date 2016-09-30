@@ -15,3 +15,6 @@ myroute.greeting_controller_greeting:
   requirements:
     _permission: 'access content'
     name: '[a-zA-z ]+'
+
+route_callbacks:
+  - '\Drupal\myroute\Routing\CTRoutes::routes'
