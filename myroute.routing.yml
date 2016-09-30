@@ -6,3 +6,12 @@ myroute.hello_world_controller_hello:
     _title: 'Hello World'
   requirements:
     _permission: 'access content'
+
+myroute.greeting_controller_greeting:
+  path: 'hello/{name}'
+  defaults:
+    _controller: '\Drupal\myroute\Controller\GreetingController::greeting'
+    _title: 'Greeting'
+  requirements:
+    _permission: 'access content'
+    name: '[a-zA-z ]+'
