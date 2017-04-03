@@ -17,7 +17,7 @@ myroute.greeting_controller_greeting:
     name: '[a-zA-z ]+'
 
 myroute.thin_controller:
-  path: 'repos/{handle}'
+  path: 'repos'
   defaults:
     _controller: '\Drupal\myroute\Controller\ThinController::getRepos'
   requirements:
