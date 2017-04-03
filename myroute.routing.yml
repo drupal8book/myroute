@@ -16,5 +16,12 @@ myroute.greeting_controller_greeting:
     _permission: 'access content'
     name: '[a-zA-z ]+'
 
+myroute.thin_controller:
+  path: 'repos/{handle}'
+  defaults:
+    _controller: '\Drupal\myroute\Controller\ThinController::getRepos'
+  requirements:
+    _permission: 'access content'
+
 route_callbacks:
   - '\Drupal\myroute\Routing\CTRoutes::routes'
